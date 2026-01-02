@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:text="Select Industry"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Choose the industry that best fits your startup"
+            android:textColor="#9CA3AF"
+            android:textSize="14sp"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Grid of Industries -->
+        <GridLayout
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Tech -->
+            <LinearLayout
+                android:id="@+id/indTech"
+                android:background="@drawable/option_unselected"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgTech"
+                    android:src="@drawable/ic_tech"
+                    android:background="@drawable/bg_icon_unselected"
+                    android:padding="10dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"/>
+
+                <TextView
+                    android:id="@+id/txtTech"
+                    android:text="Technology"
+                    android:textColor="#E5E7EB"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Health -->
+            <LinearLayout
+                android:id="@+id/indHealth"
+                android:background="@drawable/option_unselected"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgHealth"
+                    android:src="@drawable/ic_health"
+                    android:background="@drawable/bg_icon_unselected"
+                    android:padding="10dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"/>
+
+                <TextView
+                    android:id="@+id/txtHealth"
+                    android:text="Healthcare"
+                    android:textColor="#E5E7EB"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+             <!-- Retail -->
+            <LinearLayout
+                android:id="@+id/indRetail"
+                android:background="@drawable/option_unselected"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgRetail"
+                    android:src="@drawable/ic_retail"
+                    android:background="@drawable/bg_icon_unselected"
+                    android:padding="10dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"/>
+
+                <TextView
+                    android:id="@+id/txtRetail"
+                    android:text="Retail"
+                    android:textColor="#E5E7EB"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+             <!-- Other -->
+            <LinearLayout
+                android:id="@+id/indOther"
+                android:background="@drawable/option_unselected"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgOther"
+                    android:src="@drawable/ic_other"
+                    android:background="@drawable/bg_icon_unselected"
+                    android:padding="10dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"/>
+
+                <TextView
+                    android:id="@+id/txtOther"
+                    android:text="Other"
+                    android:textColor="#E5E7EB"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/btnContinue"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="@drawable/blue_button"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simats.ai_drivendigitaltwin">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Digital Twin AI"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- LAUNCHER / SPLASH SCREEN -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- ONBOARDING SCREENS -->
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardingTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardingThreeActivity"
+            android:exported="false" />
+
+        <!-- LOGIN SCREEN -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- PROFILE SETUP SCREEN -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IndustriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlertPreferencesActivity"
+            android:exported="false" />
+
+        <!-- DASHBOARD -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <!-- USER PROFILE VIEW SCREEN -->
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+
+        <!-- SETTINGS SCREEN -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <!-- PRIVACY & SECURITY SCREEN -->
+        <activity
+            android:name=".PrivacySecurityActivity"
+            android:exported="false" />
+
+        <!-- HELP & SUPPORT SCREEN -->
+        <activity
+            android:name=".HelpSupportActivity"
+            android:exported="false" />
+
+        <!-- TREND EXPLORER SCREEN -->
+        <activity
+            android:name=".TrendExplorerActivity"
+            android:exported="false" />
+
+        <!-- COMPETITORS SCREEN -->
+        <activity
+            android:name=".CompetitorsActivity"
+            android:exported="false" />
+
+        <!-- LIVE SCRAPING SCREEN -->
+        <activity
+            android:name=".LiveScrapingActivity"
+            android:exported="false" />
+
+        <!-- ROLE SELECTION SCREEN -->
+        <activity
+            android:name=".RoleSelectionActivity"
+            android:exported="false" />
+
+        <!-- CONSUMER INSIGHTS SCREEN -->
+        <activity
+            android:name=".ConsumerInsightsActivity"
+            android:exported="false" />
+
+        <!-- NOTIFICATIONS SCREEN -->
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+
+        <!-- AI REPLICA SCREEN -->
+        <activity
+            android:name=".AIReplicaActivity"
+            android:exported="false" />
+
+        <!-- INDUSTRY INSIGHTS SCREEN -->
+        <activity
+            android:name=".IndustryInsightsActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

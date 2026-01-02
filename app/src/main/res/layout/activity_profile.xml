@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Up Your Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help us personalize your experience"
+            android:textColor="#9CA3AF"
+            android:textSize="14sp"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:textColor="#E5E7EB"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter your name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6B7280"
+            android:background="@drawable/rounded_input"
+            android:padding="16dp" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#E5E7EB"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter your email"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6B7280"
+            android:background="@drawable/rounded_input"
+            android:padding="16dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#E5E7EB"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Create a password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6B7280"
+            android:background="@drawable/rounded_input"
+            android:padding="16dp"
+            android:inputType="textPassword" />
+
+        <!-- Role -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I am a..."
+            android:textColor="#E5E7EB"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Options -->
+        <LinearLayout
+            android:id="@+id/optFounder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option_unselected"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgFounder"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/ic_graph"
+                android:background="@drawable/bg_icon_unselected"
+                android:padding="10dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/txtFounder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Startup Founder"
+                android:textColor="#E5E7EB"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/optInvestor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option_unselected"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgInvestor"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/ic_case"
+                android:background="@drawable/bg_icon_unselected"
+                android:padding="10dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/txtInvestor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Investor"
+                android:textColor="#E5E7EB"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/optMarketer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option_unselected"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgMarketer"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/ic_person"
+                android:background="@drawable/bg_icon_unselected"
+                android:padding="10dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/txtMarketer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marketer"
+                android:textColor="#E5E7EB"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/optStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option_unselected"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp">
+
+            <ImageView
+                android:id="@+id/imgStudent"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/ic_school"
+                android:background="@drawable/bg_icon_unselected"
+                android:padding="10dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/txtStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student / Researcher"
+                android:textColor="#E5E7EB"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Continue Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="@drawable/blue_button"/>
+
+    </LinearLayout>
+</ScrollView>

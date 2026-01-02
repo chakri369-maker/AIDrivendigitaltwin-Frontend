@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Welcome -->
+        <TextView
+            android:text="Welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Sign in to continue your journey"
+            android:textColor="#9CA3AF"
+            android:textSize="14sp"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Name label (for registration) -->
+        <TextView
+            android:id="@+id/lblName"
+            android:text="Full Name"
+            android:textColor="#E5E7EB"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Name input (for registration) -->
+        <EditText
+            android:id="@+id/etName"
+            android:hint="Enter your full name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9CA3AF"
+            android:background="@drawable/rounded_input"
+            android:padding="16dp"
+            android:inputType="textPersonName"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+        <!-- Email label -->
+        <TextView
+            android:text="Email Address"
+            android:textColor="#E5E7EB"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- ✅ FIXED Email input -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="your.email@example.com"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9CA3AF"
+            android:background="@drawable/rounded_input"
+            android:padding="16dp"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+        <TextView
+            android:text="Password"
+            android:textColor="#E5E7EB"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- ✅ FIXED Email input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Enter your password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9CA3AF"
+            android:background="@drawable/rounded_input"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+        <!-- Continue Email Button -->
+        <Button
+            android:id="@+id/btnEmail"
+            android:text="Sign In  →"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="@drawable/blue_button"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+        <!-- Toggle between Sign In and Register -->
+        <TextView
+            android:id="@+id/txtToggleMode"
+            android:text="Don't have an account? Register"
+            android:textColor="#3B82F6"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Already signed -->
+        <TextView
+            android:id="@+id/txtAlready"
+            android:text="Already signed in? Continue"
+            android:textColor="#3B82F6"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Footer -->
+        <TextView
+            android:text="By continuing, you agree to our Terms of Service and Privacy Policy"
+            android:textColor="#6B7280"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
